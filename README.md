@@ -20,17 +20,17 @@ Other dependencies as specified in the requirements.txt file
 Usage
 Clone the repository to your local machine:
 
-bash
+
 Copy code
-git clone https://github.com/your-username/generative-ai-aws-bedrock.git
+git clone https://github.com/SulemanShahani/generative-ai-aws-bedrock.git
 Install the required dependencies:
 
-bash
+
 Copy code
 pip install -r requirements.txt
 Run the Streamlit app:
 
-bash
+
 Copy code
 streamlit run app.py
 Access the Streamlit app in your web browser.
