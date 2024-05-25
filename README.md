@@ -1,43 +1,35 @@
-# AWS-Bedrock
-The provided scripts demonstrate how to interact with different Generative AI models through the AWS Bedrock service, enabling you to generate text and  on prompts or questions.
+# Chat with PDF using AWS Bedrock 💬
 
-Features
-Text Generation: Generate text based on prompts or questions using Generative AI models.
+This project allows you to interactively chat with PDF documents using AWS Bedrock for embeddings and language model responses. You can ask questions related to the content of PDF files, and the system will generate responses based on the provided context.
 
-Image Generation: Generate images based on text descriptions using image generation models.
+## Features
 
-Streamlit Interface: Use a Streamlit interface for easy interaction with the models.
+- **PDF Data Ingestion**: Load PDF documents and split them into manageable chunks for processing.
+- **Vector Embedding**: Use AWS Bedrock to generate vector embeddings for the text content of PDF files.
+- **Language Model Interaction**: Engage with language models provided by AWS Bedrock to generate responses to user queries.
+- **Streamlit Interface**: Utilize Streamlit for building an interactive web application for chatting with PDFs.
 
-Data Ingestion: Ingest data from PDF documents for text generation tasks.
+## Usage
 
-Vector Embedding: Perform vector embedding for text documents.
+1. Clone the repository to your local machine.
+2. Install the required dependencies by running `pip install -r requirements.txt`.
+3. Ensure you have your AWS credentials set up or configure them as needed.
+4. Run the Streamlit application by executing `streamlit run app.py` in your terminal.
+5. Interact with the web interface to ask questions and receive responses based on the content of PDF files.
 
-Vector Store Management: Update and create vector stores for efficient text retrieval.
+## File Structure
 
-Multiple Generative AI Models: Interact with multiple Generative AI models provided by AWS Bedrock.
+- `app.py`: Main Python script containing the Streamlit application logic.
+- `requirements.txt`: File listing all Python dependencies required for the project.
+- `data/`: Directory containing PDF files to be processed.
+- `README.md`: This file, providing an overview of the project and instructions for usage.
 
-Prerequisites
-Before running the scripts, make sure you have the following prerequisites installed:
+## Additional Notes
 
-Python 3.x
-AWS CLI configured with appropriate credentials
-Boto3 Python library
-Streamlit Python library
-Other dependencies as specified in the requirements.txt file
-Usage
-Clone the repository to your local machine:
-
-
-Copy code
-git clone https://github.com/SulemanShahani/generative-ai-aws-bedrock.git
-Install the required dependencies:
+- Ensure that your AWS credentials are properly configured to access the Bedrock runtime services.
+- The PDF documents should be placed in the `data/` directory for ingestion.
+- You can customize the language models and parameters used for generating responses by modifying the code in `app.py`.
 
 
-Copy code
-pip install -r requirements.txt
-Run the Streamlit app:
 
 
-Copy code
-streamlit run app.py
-Access the Streamlit app in your web browser.
